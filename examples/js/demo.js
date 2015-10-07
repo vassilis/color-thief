@@ -37,7 +37,7 @@ $(document).ready(function () {
     var start                    = Date.now();
     var color                    = colorThief.getColor(image);
     var elapsedTimeForGetColor   = Date.now() - start;
-    var palette                  = colorThief.getPalette(image);
+    var palette                  = colorThief.getPalette(image, 17);
     var elapsedTimeForGetPalette = Date.now() - start + elapsedTimeForGetColor;
 
     var colorThiefOutput = {
